@@ -1,108 +1,143 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ishanjot Dhahan | PRODBYSHAN</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="blur-bg">
+    <nav class="container">
+      <div class="logo">PRODBYSHAN</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #111;
-  color: #fff;
-  line-height: 1.6;
-}
+  <section class="hero">
+    <div class="container hero-wrap">
+      <img src="prodbyshanAvatar.jpg" alt="Profile Avatar" class="avatar" />
+      <div class="hero-copy">
+        <h1 class="gradient-text">Ishanjot Dhahan</h1>
+        <p class="subtitle">Computer Engineering Technologist • Embedded + Web • Automation + Music</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-ghost" href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-header {
-  background: #000;
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
+  <section id="about" class="section fade-in">
+    <div class="container">
+      <h2>About Me</h2>
+      <p class="lede">
+        I’m a Computer Engineering Technologist who builds end-to-end systems that blend software, hardware, and automation.
+        From Raspberry Pi and Arduino to modern web stacks and Python tooling, I love turning ideas into polished, usable products.
+      </p>
+    </div>
+  </section>
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
+  <section id="projects" class="section fade-in">
+    <div class="container">
+      <h2>Projects</h2>
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+      <div class="projects-grid">
+        <!-- Project Card: Smart Fitness Mirror -->
+        <article class="project-card">
+          <div class="project-head">
+            <h3>Smart Fitness Mirror</h3>
+            <ul class="tags">
+              <li>Raspberry Pi</li>
+              <li>Firebase</li>
+              <li>Android</li>
+              <li>Voice AI</li>
+            </ul>
+          </div>
+          <p>
+            Intelligent health-tracking mirror with sensors for height, weight, heart rate, and SpO₂.
+            Real-time sync to Firebase, custom Android companion app, and voice control via Gemini.
+          </p>
+          <ul class="bullets">
+            <li>Realtime DB + Cloud sync</li>
+            <li>BLE / USB sensor integration</li>
+            <li>Wake-word voice actions</li>
+            <li>Modular widgets (weather, metrics, calendar)</li>
+          </ul>
+        </article>
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
+        <!-- Project Card: MP3 → Visualizer Automation -->
+        <article class="project-card">
+          <div class="project-head">
+            <h3>MP3 → Visualizer Automation</h3>
+            <ul class="tags">
+              <li>Python</li>
+              <li>FFmpeg</li>
+              <li>Automation</li>
+              <li>GUI</li>
+            </ul>
+          </div>
+          <p>
+            One-click pipeline that converts any MP3 into a looped visualizer MP4 with title card, thumbnail,
+            metadata JSON, and optional uploader step for YouTube/BeatStars. Built for speed and repeatability.
+          </p>
+          <ul class="bullets">
+            <li>Waveform/cover loop compositor (FFmpeg)</li>
+            <li>Auto-generated thumbnails & metadata</li>
+            <li>Folder watcher + job queue (SQLite)</li>
+            <li>Pluggable “render profiles” for different styles</li>
+          </ul>
+          <div class="project-links">
+            <a class="btn btn-small" href="https://github.com/yourusername/mp3-to-visualizer-scaffold" target="_blank" rel="noopener">GitHub Repo</a>
+            <!-- Optional demo links:
+            <a class="btn btn-small btn-ghost" href="https://youtu.be/your-demo-video" target="_blank" rel="noopener">Demo Video</a>
+            <a class="btn btn-small btn-ghost" href="https://your-live-page.example" target="_blank" rel="noopener">Live Page</a>
+            -->
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
+  <section id="skills" class="section fade-in">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Firebase</li>
+        <li>Git</li>
+        <li>UX/UI</li>
+        <li>Raspberry Pi</li>
+        <li>Android Dev</li>
+      </ul>
+    </div>
+  </section>
 
-.nav-links a:hover {
-  color: #00ffe1;
-}
+  <section id="contact" class="section fade-in">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="contact-card">
+        <p>Email: <a href="mailto:Ishanjot@outlook.com">Ishanjot@outlook.com</a></p>
+        <p>GitHub: <a href="https://github.com/IshanjotDhahan7868" target="_blank">IshanjotDhahan7868</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/ishanjot-dhahan-910374216" target="_blank">View Profile</a></p>
+      </div>
+    </div>
+  </section>
 
-.hero {
-  text-align: center;
-  padding: 4rem 1rem;
-  background: radial-gradient(#222, #000);
-}
+  <footer>
+    <div class="container">
+      <p>© 2025 PRODBYSHAN. All rights reserved.</p>
+    </div>
+  </footer>
 
-.avatar {
-  width: 150px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-  border: 2px solid #00ffe1;
-}
-
-.section {
-  padding: 3rem 2rem;
-  max-width: 800px;
-  margin: auto;
-}
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.skills li {
-  list-style: none;
-  padding: 0.5rem 1rem;
-  background: #1f1f1f;
-  border: 1px solid #444;
-  border-radius: 5px;
-}
-
-.project {
-  background: #1a1a1a;
-  padding: 1rem;
-  margin-top: 1rem;
-  border-left: 3px solid #00ffe1;
-}
-
-footer {
-  text-align: center;
-  padding: 2rem;
-  background: #000;
-  font-size: 0.9rem;
-  color: #aaa;
-}
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.7s ease;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
+  <script src="script.js"></script>
+</body>
+</html>
