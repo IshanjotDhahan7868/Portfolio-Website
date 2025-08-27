@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <nav>
+  <header class="blur-bg">
+    <nav class="container">
       <div class="logo">PRODBYSHAN</div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
@@ -20,57 +20,12 @@
   </header>
 
   <section class="hero">
-    <img src="prodbyshanAvatar.jpg" alt="Profile Avatar" class="avatar" />
-    <h1>Ishanjot Dhahan</h1>
-    <p>Computer Engineering Technologist</p>
-  </section>
-
-  <section id="about" class="section fade-in">
-    <h2>About Me</h2>
-    <p>
-      I'm a Computer Engineering Technology student passionate about building smart systems that blend hardware and software.
-      From Raspberry Pi projects to web design, I love solving real-world problems with creative tech solutions.
-    </p>
-  </section>
-
-  <section id="projects" class="section fade-in">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Smart Fitness Mirror</h3>
-      <p>
-        Built an intelligent health tracking mirror with sensors for height, weight, heart rate, and oxygen levels.  
-        Features real-time data sync via Firebase, voice control using Google Gemini AI, and an Android companion app.
-      </p>
-    </div>
-  </section>
-
-  <section id="skills" class="section fade-in">
-    <h2>Skills</h2>
-    <ul class="skills">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Python</li>
-      <li>Firebase</li>
-      <li>Git</li>
-      <li>UX/UI</li>
-      <li>Raspberry Pi</li>
-      <li>Android Dev</li>
-    </ul>
-  </section>
-
-  <section id="contact" class="section fade-in">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:Ishanjot@outlook.com">Ishanjot@outlook.com</a></p>
-    <p>GitHub: <a href="https://github.com/IshanjotDhahan7868" target="_blank">IshanjotDhahan7868</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/ishanjot-dhahan-910374216" target="_blank">View Profile</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 PRODBYSHAN. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
-
+    <div class="container hero-wrap">
+      <img src="prodbyshanAvatar.jpg" alt="Profile Avatar" class="avatar" />
+      <div class="hero-copy">
+        <h1 class="gradient-text">Ishanjot Dhahan</h1>
+        <p class="subtitle">Computer Engineering Technologist • Embedded + Web • Automation + Music</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-ghost" href="#contact">Contact</a>
+        </div>
