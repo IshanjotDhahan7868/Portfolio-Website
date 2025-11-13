@@ -143,6 +143,51 @@ body {
   border: 1px solid rgba(255,255,255,0.1);
 }
 
+/* === Demo widget styles === */
+.demo-widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.demo-widget input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(20, 20, 30, 0.6);
+  color: #f9fafb;
+  font-size: 1rem;
+}
+
+.demo-widget input::placeholder {
+  color: #6b7280;
+}
+
+.demo-output {
+  margin-top: 20px;
+  max-width: 450px;
+  color: #d1d5db;
+  text-align: left;
+}
+
+.demo-output h4 {
+  margin: 8px 0 4px;
+  font-size: 1.05rem;
+}
+
+.demo-output ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.demo-output p {
+  margin: 4px 0 0;
+}
+
 .footer {
   margin-top: 60px;
   padding: 20px;
