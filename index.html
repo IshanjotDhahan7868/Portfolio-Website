@@ -5,205 +5,135 @@
     <title>Ishan Dhahan – Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="prodbyshanAvatar.jpg" />
   </head>
+
   <body>
+    <!-- NAVBAR -->
     <header class="navbar">
       <div class="nav-left">
         <span class="logo-dot"></span>
         <span class="nav-name">Ishan Dhahan</span>
       </div>
       <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
+        <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main>
-      <!-- HERO -->
-      <section class="hero" id="top">
-        <div class="hero-text">
-          <p class="hero-tag">Full-stack dev • Automation • AI tools</p>
-          <h1>Building small SaaS tools that solve real problems.</h1>
-          <p class="hero-sub">
-            I design and ship end-to-end products: from idea → backend →
-            frontend → deployment.  
-            Focused on automation, AI, and tools that actually make money.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#projects" class="btn primary-btn">View my projects</a>
-            <a
-              href="https://github.com/IshanjotDhahan7868"
-              target="_blank"
-              class="btn ghost-btn"
-              >GitHub profile</a
-            >
-          </div>
-
-          <div class="hero-meta">
-            <span>Based in Brampton, Canada</span>
-            <span>Open to internships & junior roles</span>
-          </div>
-        </div>
-
-        <div class="hero-card">
+      <!-- PROFILE HERO (TOP) -->
+      <section class="profile-hero">
+        <div class="profile-card">
           <img
             src="prodbyshanAvatar.jpg"
-            alt="Ishan avatar"
-            class="hero-avatar"
+            alt="Profile Avatar"
+            class="profile-avatar"
           />
-          <div class="hero-card-body">
-            <p class="hero-card-title">Currently building</p>
-            <ul class="hero-card-list">
-              <li>🩺 <strong>FeedDoctor</strong> – fixes Google Shopping feeds</li>
-              <li>🎧 <strong>BeatBank</strong> – AI tools for producers</li>
-              <li>📊 <strong>WealthPilot</strong> – simple investing simulator</li>
-            </ul>
+
+          <h1 class="profile-name">Ishan Dhahan</h1>
+          <p class="profile-title">
+            Full-stack Developer • Automation • AI Tools
+          </p>
+          <p class="profile-location">📍 Brampton, Canada</p>
+
+          <div class="profile-actions">
+            <a href="#projects" class="btn primary-btn">View Projects</a>
+            <a href="mailto:ishanjot@outlook.com" class="btn ghost-btn"
+              >Contact</a
+            >
           </div>
         </div>
       </section>
 
       <!-- ABOUT -->
       <section id="about" class="section">
-        <h2 class="section-title">About</h2>
+        <h2 class="section-title">About Me</h2>
         <p class="section-text">
-          I’m a hands-on developer who loves building things end-to-end:
-          automations, SaaS dashboards, and small tools that feel
-          <em>real</em>, not just tutorial apps. I use JavaScript/TypeScript and
-          Python to ship projects fast, integrate APIs, and automate workflows
-          around e-commerce, content, and finance.
+          I’m a hands-on full-stack developer focused on automation, SaaS tools,
+          and AI-powered products. I build fast, iterate quickly, and ship real
+          tools that solve real problems.  
+          <br /><br />
+          My projects combine JavaScript/TypeScript, Python, clean UI design,
+          and automation logic to create simple but powerful tools.
         </p>
-      </section>
-
-      <!-- EXPERIENCE -->
-      <section id="experience" class="section">
-        <h2 class="section-title">Experience</h2>
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-header">
-              <h3>Independent SaaS / Automation Builder</h3>
-              <span class="pill">2024 – Present</span>
-            </div>
-            <p>
-              Designing and building small, focused tools around e-commerce,
-              automation, and AI – from idea to deployment (GitHub + Vercel /
-              Railway).
-            </p>
-            <ul class="bullet-list">
-              <li>Architected full-stack apps (frontend + backend + DB).</li>
-              <li>Integrated AI APIs (LLMs, image generation) into real flows.</li>
-              <li>Automated manual workflows (YouTube upload, CSV cleaning, etc.).</li>
-            </ul>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-header">
-              <h3>Computer Engineering Technology – Humber College</h3>
-              <span class="pill">Diploma</span>
-            </div>
-            <p>
-              Foundation in programming, electronics, networking, and system
-              design, applied now to real-world web apps and automation projects.
-            </p>
-          </article>
-        </div>
       </section>
 
       <!-- PROJECTS -->
       <section id="projects" class="section">
-        <div class="section-header-row">
-          <h2 class="section-title">Projects</h2>
-          <div class="project-filters">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="saas">SaaS</button>
-            <button class="filter-btn" data-filter="automation">Automation</button>
-            <button class="filter-btn" data-filter="ai">AI</button>
-          </div>
-        </div>
+        <h2 class="section-title">Featured Projects</h2>
 
         <div class="project-grid">
           <!-- FeedDoctor -->
-          <article class="project-card" data-tags="saas automation">
+          <article class="project-card">
             <h3>FeedDoctor</h3>
             <p class="project-tagline">
-              Web app that scans product feeds and suggests fixes for Google Merchant Center.
+              AI-assisted Google Merchant Center feed repair tool.
             </p>
             <ul class="project-points">
-              <li>Uploads CSV or store URL and finds missing brand / GTIN / title issues.</li>
-              <li>Generates a cleaned patch file ready to re-upload.</li>
-              <li>Built with Next.js, TypeScript, serverless API routes.</li>
+              <li>Fixes GTIN, brand, image, and title issues</li>
+              <li>Uploads CSV or URL and generates cleaned data</li>
+              <li>Built with Next.js + API Routes</li>
             </ul>
             <div class="project-links">
-              <a href="https://github.com/IshanjotDhahan7868/feeddoctor" target="_blank">Code</a>
+              <a
+                href="https://github.com/IshanjotDhahan7868/feeddoctor"
+                target="_blank"
+                >GitHub</a
+              >
             </div>
           </article>
 
           <!-- BeatBank -->
-          <article class="project-card" data-tags="saas ai">
+          <article class="project-card">
             <h3>BeatBank</h3>
             <p class="project-tagline">
-              AI-assisted beat metadata + cover art generator for music producers.
+              AI metadata + cover art generator for producers.
             </p>
             <ul class="project-points">
-              <li>Takes a beat file and auto-suggests title, tags, and description.</li>
-              <li>Generates artwork using AI image models for YouTube/BeatStars.</li>
-              <li>Stack: React, Supabase, Python backend, OpenAI API.</li>
+              <li>Generates tags, titles, descriptions</li>
+              <li>AI album artwork generation</li>
+              <li>Supabase + Python + OpenAI API</li>
             </ul>
             <div class="project-links">
-              <a href="https://github.com/IshanjotDhahan7868/BeatBank" target="_blank">Code</a>
+              <a
+                href="https://github.com/IshanjotDhahan7868/BeatBank"
+                target="_blank"
+                >GitHub</a
+              >
             </div>
           </article>
 
           <!-- WealthPilot -->
-          <article class="project-card" data-tags="saas">
+          <article class="project-card">
             <h3>WealthPilot</h3>
             <p class="project-tagline">
-              Simple investing “what-if” simulator with package-based projections.
+              Simple investment projection tool with packages.
             </p>
             <ul class="project-points">
-              <li>Lets users model monthly contributions and returns by “package”.</li>
-              <li>Shows future value and inflation-adjusted projections on a chart.</li>
-              <li>Built as a single-page app with vanilla JS + Chart.js.</li>
+              <li>Models monthly contributions</li>
+              <li>Shows inflation-adjusted values</li>
+              <li>Built using vanilla JS + Chart.js</li>
             </ul>
             <div class="project-links">
-              <!-- Put demo link if you host it -->
-              <span class="link-disabled">Demo coming soon</span>
+              <span class="link-disabled">Demo Coming</span>
             </div>
           </article>
 
-          <!-- Automation / Uploader -->
-          <article class="project-card" data-tags="automation ai">
-            <h3>Content Uploader Automation</h3>
+          <!-- Automation -->
+          <article class="project-card">
+            <h3>Video Automation Pipeline</h3>
             <p class="project-tagline">
-              Automation pipeline that turns audio files into videos and uploads them.
+              Converts .mp3 → MP4 + thumbnail → uploads automatically.
             </p>
             <ul class="project-points">
-              <li>Watches a folder for new .mp3 files.</li>
-              <li>Generates thumbnails + MP4 visualizers automatically.</li>
-              <li>Uses Selenium / browser automation to upload with metadata.</li>
+              <li>Folder watcher</li>
+              <li>Thumbnail + metadata AI generation</li>
+              <li>Selenium + MoviePy automated uploading</li>
             </ul>
             <div class="project-links">
-              <span class="link-disabled">Private repo</span>
-            </div>
-          </article>
-
-          <!-- PindMap -->
-          <article class="project-card" data-tags="saas">
-            <h3>PindMap (Prototype)</h3>
-            <p class="project-tagline">
-              Concept web app mapping Punjabi cultural spots in Brampton.
-            </p>
-            <ul class="project-points">
-              <li>Dark, glassy UI inspired by modern SaaS dashboards.</li>
-              <li>Card-based layout designed for mobile (iPhone Safari first).</li>
-              <li>Built as a playground for UI/UX and map-based ideas.</li>
-            </ul>
-            <div class="project-links">
-              <span class="link-disabled">Prototype</span>
+              <span class="link-disabled">Private</span>
             </div>
           </article>
         </div>
@@ -214,20 +144,20 @@
         <h2 class="section-title">Skills</h2>
         <div class="skills-grid">
           <div class="skill-column">
-            <h3>Languages</h3>
-            <p>JavaScript / TypeScript, Python, HTML, CSS</p>
+            <h3>Programming</h3>
+            <p>JavaScript/TypeScript, Python</p>
           </div>
           <div class="skill-column">
             <h3>Frontend</h3>
-            <p>React, Next.js, Tailwind, responsive design</p>
+            <p>React, Next.js, TailwindCSS</p>
           </div>
           <div class="skill-column">
             <h3>Backend & DB</h3>
-            <p>Node.js APIs, FastAPI (Python), Supabase, PostgreSQL</p>
+            <p>Node.js, FastAPI, Supabase, PostgreSQL</p>
           </div>
           <div class="skill-column">
             <h3>Automation & AI</h3>
-            <p>APIs, Selenium, OpenAI API, CSV/JSON pipelines</p>
+            <p>Selenium, APIs, OpenAI, MoviePy</p>
           </div>
         </div>
       </section>
@@ -236,26 +166,20 @@
       <section id="contact" class="section">
         <h2 class="section-title">Contact</h2>
         <p class="section-text">
-          If you’re looking for someone who can think in products, build quickly,
-          and ship working tools, I’d love to talk.
+          Want to collaborate or hire me? I’m always open to new projects.
         </p>
         <div class="contact-actions">
           <a href="mailto:ishanjot@outlook.com" class="btn primary-btn"
-            >Email me</a
-          >
-          <a
-            href="https://github.com/IshanjotDhahan7868"
-            class="btn ghost-btn"
-            target="_blank"
-            >GitHub</a
+            >Email Me</a
           >
         </div>
       </section>
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer">
       <span>© <span id="year"></span> Ishan Dhahan</span>
-      <span>Built with HTML, CSS, and a bit of JS.</span>
+      <span>Built by hand with HTML, CSS & JS</span>
     </footer>
 
     <script src="script.js"></script>
