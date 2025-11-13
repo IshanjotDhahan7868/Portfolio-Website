@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ishan Dhahan – Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="nav-left">
+        <span class="logo-dot"></span>
+        <span class="nav-name">Ishan Dhahan</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="#tools">Tools</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- PROFILE HERO (TOP) -->
+      <section class="profile-hero">
+        <div class="profile-card">
+          <img
+            src="prodbyshanAvatar.jpg"
+            alt="Profile Avatar"
+            class="profile-avatar"
+          />
+
+          <h1 class="profile-name">Ishan Dhahan</h1>
+          <p class="profile-title">
+            Full-stack Developer • Automation • AI Tools
+          </p>
+          <p class="profile-location">📍 Brampton, Canada</p>
+
+          <div class="profile-actions">
+            <a href="#projects" class="btn primary-btn">View Projects</a>
+            <a href="mailto:ishanjot@outlook.com" class="btn ghost-btn"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-text">
+          I’m a hands-on full-stack developer focused on automation, SaaS tools,
+          and AI-powered products. I build fast, iterate quickly, and ship real
+          tools that solve real problems.  
+          <br /><br />
+          My projects combine JavaScript/TypeScript, Python, clean UI design,
+          and automation logic to create simple but powerful tools.
+        </p>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <h2 class="section-title">Featured Projects</h2>
+
+        <div class="project-grid">
+          <!-- FeedDoctor -->
+          <article class="project-card">
+          <h3><a href="projects/feeddoctor.html" style="color: inherit; text-decoration: none;">FeedDoctor</a></h3>
+            <p class="project-tagline">
+              AI-assisted Google Merchant Center feed repair tool.
+            </p>
+            <ul class="project-points">
+              <li>Fixes GTIN, brand, image, and title issues</li>
+              <li>Uploads CSV or URL and generates cleaned data</li>
+              <li>Built with Next.js + API Routes</li>
+            </ul>
+            <div class="project-links">
+              <a
+                href="https://github.com/IshanjotDhahan7868/feeddoctor"
+                target="_blank"
+                >GitHub</a
+              >
+              <a href="projects/feeddoctor.html">Case Study</a>
+            </div>
+          </article>
+
+          <!-- BeatBank -->
+          <article class="project-card">
+          <h3><a href="projects/beatbank.html" style="color: inherit; text-decoration: none;">BeatBank</a></h3>
+            <p class="project-tagline">
+              AI metadata + cover art generator for producers.
+            </p>
+            <ul class="project-points">
+              <li>Generates tags, titles, descriptions</li>
+              <li>AI album artwork generation</li>
+              <li>Supabase + Python + OpenAI API</li>
+            </ul>
+            <div class="project-links">
+              <a
+                href="https://github.com/IshanjotDhahan7868/BeatBank"
+                target="_blank"
+                >GitHub</a
+              >
+              <a href="projects/beatbank.html">Case Study</a>
+            </div>
+          </article>
+
+          <!-- WealthPilot -->
+          <article class="project-card">
+          <h3><a href="projects/wealthpilot.html" style="color: inherit; text-decoration: none;">WealthPilot</a></h3>
+            <p class="project-tagline">
+              Simple investment projection tool with packages.
+            </p>
+            <ul class="project-points">
+              <li>Models monthly contributions</li>
+              <li>Shows inflation-adjusted values</li>
+              <li>Built using vanilla JS + Chart.js</li>
+            </ul>
+            <div class="project-links">
+              <span class="link-disabled">Demo Coming</span>
+              <a href="projects/wealthpilot.html">Case Study</a>
+            </div>
+          </article>
+
+          <!-- Automation -->
+          <article class="project-card">
+          <h3><a href="projects/automation.html" style="color: inherit; text-decoration: none;">Video Automation Pipeline</a></h3>
+            <p class="project-tagline">
+              Converts .mp3 → MP4 + thumbnail → uploads automatically.
+            </p>
+            <ul class="project-points">
+              <li>Folder watcher</li>
+              <li>Thumbnail + metadata AI generation</li>
+              <li>Selenium + MoviePy automated uploading</li>
+            </ul>
+            <div class="project-links">
+              <span class="link-disabled">Private</span>
+              <a href="projects/automation.html">Case Study</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-column">
+            <h3>Programming</h3>
+            <p>JavaScript/TypeScript, Python</p>
+          </div>
+          <div class="skill-column">
+            <h3>Frontend</h3>
+            <p>React, Next.js, TailwindCSS</p>
+          </div>
+          <div class="skill-column">
+            <h3>Backend & DB</h3>
+            <p>Node.js, FastAPI, Supabase, PostgreSQL</p>
+          </div>
+          <div class="skill-column">
+            <h3>Automation & AI</h3>
+            <p>Selenium, APIs, OpenAI, MoviePy</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-text">
+          Want to collaborate or hire me? I’m always open to new projects.
+        </p>
+        <div class="contact-actions">
+          <a href="mailto:ishanjot@outlook.com" class="btn primary-btn"
+            >Email Me</a
+          >
+        </div>
+      </section>
+
+      <!-- LIVE DEMO / TOOLS -->
+      <section id="tools" class="section">
+        <h2 class="section-title">Live Demo: Beat Title Generator</h2>
+        <p class="section-text">
+          Enter a short beat description and get AI‑style suggestions for track titles and tags. This mini tool runs entirely in your browser and demonstrates some of the
+          logic behind my BeatBank project.
+        </p>
+        <div class="demo-widget">
+          <input type="text" id="beatInput" placeholder="Describe your beat…" />
+          <button id="generateBtn" class="btn primary-btn">Generate</button>
+          <div id="demoOutput" class="demo-output"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <span>© <span id="year"></span> Ishan Dhahan</span>
+      <span>Built by hand with HTML, CSS & JS</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

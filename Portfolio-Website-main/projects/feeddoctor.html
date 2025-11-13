@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FeedDoctor Case Study – Ishan Dhahan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <!-- Navigation (simple back link) -->
+    <header class="navbar">
+      <div class="nav-left">
+        <span class="logo-dot"></span>
+        <span class="nav-name">Ishan Dhahan</span>
+      </div>
+      <nav class="nav-links">
+        <a href="../index.html#projects">Back to Projects</a>
+      </nav>
+    </header>
+    <main>
+      <section class="section">
+        <h1 class="section-title">FeedDoctor</h1>
+        <p class="section-text">
+          FeedDoctor is an AI‑assisted tool that cleans and repairs Google Merchant Center product feeds. Retailers often struggle with incomplete data such as missing GTINs, brands, image links or product titles, which can cause their products to be disapproved. FeedDoctor automates the cleanup process and generates a ready‑to‑upload patch file.
+        </p>
+        <h3>Problem</h3>
+        <p class="section-text">
+          Managing large catalogs for Google Shopping can be tedious. Product feeds frequently have missing data or invalid fields. Manually auditing hundreds of rows is error‑prone and time consuming. As a result, marketing campaigns suffer because products are rejected.
+        </p>
+        <h3>Solution</h3>
+        <p class="section-text">
+          FeedDoctor lets merchants upload a CSV feed or specify a store URL. The app scans every item, cross‑checks it against public UPC/GTIN databases and suggests fixes for missing or incorrect fields. It outputs a cleaned CSV patch file with all the corrected data ready to be re‑uploaded into Google Merchant Center. The interface also highlights issues and explains why certain values are required.
+        </p>
+        <h3>Tech Stack</h3>
+        <ul class="section-text" style="text-align:left; display:inline-block; margin:0 auto;">
+          <li>Next.js and React on the frontend</li>
+          <li>Serverless API routes for CSV parsing and validation</li>
+          <li>Node.js with OpenAI embeddings to infer missing information</li>
+          <li>Supabase Postgres for storing processing history</li>
+        </ul>
+        <h3>My Role & Challenges</h3>
+        <p class="section-text">
+          I built FeedDoctor end‑to‑end: designing the product flow, creating the React/Next.js UI, implementing file uploads and feed parsing, integrating with external data APIs to validate GTINs, and constructing the AI model prompts that infer brand names or categories when data is missing. A key challenge was scaling CSV parsing in a serverless environment and ensuring the UI remained responsive for large feeds.
+        </p>
+      </section>
+    </main>
+    <footer class="footer">
+      <span>© <span id="year"></span> Ishan Dhahan</span>
+      <span>Built by hand with HTML, CSS & JS</span>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

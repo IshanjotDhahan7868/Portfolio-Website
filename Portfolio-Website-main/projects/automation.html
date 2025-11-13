@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Video Automation Pipeline Case Study – Ishan Dhahan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-left">
+        <span class="logo-dot"></span>
+        <span class="nav-name">Ishan Dhahan</span>
+      </div>
+      <nav class="nav-links">
+        <a href="../index.html#projects">Back to Projects</a>
+      </nav>
+    </header>
+    <main>
+      <section class="section">
+        <h1 class="section-title">Video Automation Pipeline</h1>
+        <p class="section-text">
+          My video automation pipeline converts audio files into fully packaged videos and uploads them automatically to platforms like YouTube. It uses a combination of file system watchers, AI‑generated thumbnails, audio visualizer creation and browser automation to remove all the manual steps from publishing audio content online.
+        </p>
+        <h3>Problem</h3>
+        <p class="section-text">
+          Uploading music or podcast episodes as videos involves repetitive tasks: creating a thumbnail, rendering an audio waveform visualization, combining the audio and visual, filling in metadata, and finally uploading through a web interface. Doing this manually for multiple files every week wastes time and is prone to mistakes.
+        </p>
+        <h3>Solution</h3>
+        <p class="section-text">
+          The automation pipeline watches a designated folder. When an MP3 file appears, it triggers a sequence: generate a thumbnail via OpenAI’s image API based on the file name, render a simple waveform visualization using MoviePy, merge audio and visual into an MP4, then open a headless browser with Selenium to upload the video. Metadata (title, description, tags) is prefilled based on file naming conventions, and the process finishes without manual intervention.
+        </p>
+        <h3>Tech Stack</h3>
+        <ul class="section-text" style="text-align:left; display:inline-block; margin:0 auto;">
+          <li>Python scripts orchestrating the workflow</li>
+          <li>MoviePy and FFmpeg for audio/visual rendering</li>
+          <li>OpenAI API for generating thumbnails and metadata suggestions</li>
+          <li>Selenium WebDriver to automate browser uploads</li>
+        </ul>
+        <h3>My Role & Challenges</h3>
+        <p class="section-text">
+          I architected and implemented this pipeline from scratch. I built the file watcher and processing queue, wrote Python functions to generate thumbnails and visualizers, and automated the upload process. The biggest hurdles included synchronizing asynchronous jobs, handling API errors gracefully, and keeping the Selenium automation resilient against changes in YouTube’s interface.
+        </p>
+      </section>
+    </main>
+    <footer class="footer">
+      <span>© <span id="year"></span> Ishan Dhahan</span>
+      <span>Built by hand with HTML, CSS & JS</span>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

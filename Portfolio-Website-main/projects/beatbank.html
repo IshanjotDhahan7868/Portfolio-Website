@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BeatBank Case Study – Ishan Dhahan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-left">
+        <span class="logo-dot"></span>
+        <span class="nav-name">Ishan Dhahan</span>
+      </div>
+      <nav class="nav-links">
+        <a href="../index.html#projects">Back to Projects</a>
+      </nav>
+    </header>
+    <main>
+      <section class="section">
+        <h1 class="section-title">BeatBank</h1>
+        <p class="section-text">
+          BeatBank is an AI‑powered metadata and cover art generator for music producers. It helps beat makers quickly prepare their tracks for distribution by automatically suggesting titles, tags, descriptions and generating custom artwork based on the mood of their beats.
+        </p>
+        <h3>Problem</h3>
+        <p class="section-text">
+          Uploading beats to marketplaces like BeatStars, YouTube or personal stores takes a lot of time. Producers need to write catchy titles, identify genres/tags, describe their sound, and create eye‑catching cover art. Doing this manually for every beat kills creativity and slows down release schedules.
+        </p>
+        <h3>Solution</h3>
+        <p class="section-text">
+          BeatBank analyzes an uploaded audio file using both digital signal processing and large language models. It extracts tempo and mood to suggest titles and tags. It then uses OpenAI's image generation models to create unique cover art that matches the vibe of the track. Producers can edit the suggestions and download ready‑to‑use assets for multiple platforms.
+        </p>
+        <h3>Tech Stack</h3>
+        <ul class="section-text" style="text-align:left; display:inline-block; margin:0 auto;">
+          <li>React for the user interface</li>
+          <li>Supabase for user authentication and storage</li>
+          <li>FastAPI Python backend to process audio and interact with AI APIs</li>
+          <li>OpenAI GPT for metadata suggestions and DALL·E for image generation</li>
+        </ul>
+        <h3>My Role & Challenges</h3>
+        <p class="section-text">
+          I designed BeatBank with a strong focus on user experience. I built the frontend UI components, integrated the Supabase authentication, wrote the FastAPI endpoints to process audio and manage requests to OpenAI, and optimized the latency of the AI calls to ensure the app felt snappy. The largest challenge was orchestrating multiple AI requests in parallel and handling rate limits while maintaining a clean asynchronous codebase.
+        </p>
+      </section>
+    </main>
+    <footer class="footer">
+      <span>© <span id="year"></span> Ishan Dhahan</span>
+      <span>Built by hand with HTML, CSS & JS</span>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>
